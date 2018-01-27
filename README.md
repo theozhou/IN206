@@ -1,5 +1,4 @@
-# IN206
-Projet de Base de données
+# Projet de Base de données(IN206)
 Documents et programmes exemples sur http://www-smis.inria.fr/~anciaux/ENSTA/IN206/5-projet </br>
 # Objectif :
 L'objectif est de se familiariser avec des aspects importants pour le développement d'applications utilisant des bases de données. Dans une première étape, vous devez construire un MCD permettant de modéliser une base de location de voitures. Dans une deuxième étape, vous réaliserez le MLD correspondant; puis implanterez le MPD sous Oracle Express. Enfin, vous insèrerez quelques données, judicieusement choisies par rapport aux questions Q1 à Q5 dont vous donnerez le texte SQL dans la partie 3. Dans la partie 4, vous testerez l'appel d'une base de données depuis C. Pour cela, vous utiliserez le driver Oracle open source OCILIB/OCI (http://www.ocilib.net). Un exemple simple permettant de débuter vous est fourni. Sur la base de cet exemple, il vous est demandé de réaliser une application simpliste. Enfin, vous tenterez de réaliser une attaque au processus d'identification que vous aurez développé, montrant qu'une mauvaise programmation peut générer des failles importantes.
